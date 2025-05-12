@@ -1,17 +1,18 @@
 import { Outlet } from "react-router-dom";
+import { Navbar } from "../user/components";
 
 export default function RootLayout() {
   return (
-    <>
-      <header className="p-4 border-b">
-        <h1 className="text-xl font-semibold">My Blog</h1>
+    <div className="flex flex-col min-h-screen">
+      <header className="sm:pt-[25px] sm:pb-[20px] pt-[20px] pb-[15px] mb-[50px]">
+       <Navbar />
       </header>
-      <main className="p-4">
+      <main className="custom-container flex-1">
         <Outlet />
       </main>
-      <footer className="p-4 border-t text-sm text-center text-gray-500">
-        &copy; 2025 My Blog. All rights reserved.
+      <footer className="text-center text-[16px] sm:pt-[25px] sm:pb-[15px] pt-[20px] pb-[10px]">
+        &copy; 2025 ffozilbek.blog
       </footer>
-    </>
+    </div>
   );
 }
