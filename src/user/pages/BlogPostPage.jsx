@@ -1,6 +1,9 @@
+
+
 const BlogPostPage = () => {
   return (
-    <div>BlogPostPage</div>
+    <div>
+    </div>
   )
 }
 

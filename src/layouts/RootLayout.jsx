@@ -4,7 +4,7 @@ import { Navbar } from "../user/components";
 export default function RootLayout() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="sm:pt-[25px] sm:pb-[20px] pt-[20px] pb-[15px] mb-[50px]">
+      <header className="sm:pt-[25px] sm:pb-[20px] pt-[20px] pb-[15px]">
        <Navbar />
       </header>
       <main className="custom-container flex-1">

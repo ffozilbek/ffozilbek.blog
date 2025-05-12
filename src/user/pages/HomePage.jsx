@@ -6,7 +6,7 @@ import { Link } from 'react-router'
 
 const HomePage = () => {
   return (
-    <div className='flex justify-between'>
+    <div className='flex justify-between mt-[50px]'>
       <div>
         <img className='rounded-[10px] shadow-lg hover:-translate-y-1 hover:scale-105 delay-150 duration-300 ease-in' src={fozilbek} alt="Fozilbek Fayzullayev" width={390} height={453}/>
       </div>
