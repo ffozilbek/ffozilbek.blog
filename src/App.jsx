@@ -12,7 +12,7 @@ const router = createBrowserRouter([
       { index: true, Component: HomePage },
       { path: "blog", Component: BlogPage },
       { path: "about", Component: AboutPage },
-      { path: "post/:id", Component: BlogPostPage },
+      { path: "posts/:id", Component: BlogPostPage },
     ],
   },
 ]);
@@ -21,4 +21,4 @@ const App = () => {
   return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
