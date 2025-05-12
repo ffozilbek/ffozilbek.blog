@@ -1,4 +1,4 @@
-import { Link } from "react-router"
+import { HomePage,AboutPage,BlogPage, BlogPostPage } from "./user/pages";
 
 const App = () => {
   return (
