@@ -12,7 +12,7 @@ const HomePage = () => {
       </div>
       <div className='ml-0 md:ml-[55px] text-center md:text-left'>
         <h1 className='text-[2rem] md:text-[3rem] font-heading font-bold text-heading'>Fozilbek Fayzullayev</h1>
-        <h2 className='text-[1.25rem] md:text-[2rem] font-heading font-medium text-second-text'>Frondend developer</h2>
+        <h2 className='text-[1.25rem] md:text-[2rem] font-heading font-medium text-second-text'>Frontend developer</h2>
         <p className='mb-[30px]'>Zerikishdan blog yozishga qaror qildim.</p>
         <div className='flex items-center mb-[30px] gap-x-[10px] justify-center md:justify-start'>
           <Link to='https://www.instagram.com/fay_zek_art/' target='_blank' className='hover:opacity-80 transition-opacity duration-75 ease-in'>
