@@ -9,11 +9,11 @@ const BlogPostPage = () => {
 
   useEffect(() => {
     // Viewsni oshirish
-    axios.put(`http://localhost:3000/api/posts/${id}/view`);
+    axios.put(`https://ffozilbek-blog-backend.onrender.com/api/posts/${id}/view`)
 
     // Postni olish
     axios
-      .get(`http://localhost:3000/api/posts/${id}`)
+      .get(`https://ffozilbek-blog-backend.onrender.com/api/posts/${id}`)
       .then((res) => setPost(res.data))
       .catch((err) => console.log(err));
   }, [id]);
