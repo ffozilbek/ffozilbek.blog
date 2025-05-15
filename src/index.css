@@ -74,7 +74,7 @@ body {
     height: 1px;
     background-color: var(--color-second-text);
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .scrolled {

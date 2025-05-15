@@ -1,40 +1,26 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import db from "../../db/database.json";
 import { Link } from "react-router";
 
 const BlogPostPage = () => {
   const { id } = useParams();
-  const [post, setPost] = useState(null);
+  const [post, setPost] = useState([]);
 
-  useEffect(() => {
-    // Viewsni oshirish
-    axios.put(`https://ffozilbek-blog-backend.onrender.com/api/posts/${id}/view`)
-
-    // Postni olish
-    axios
-      .get(`https://ffozilbek-blog-backend.onrender.com/api/posts/${id}`)
-      .then((res) => setPost(res.data))
-      .catch((err) => console.log(err));
-  }, [id]);
+  useEffect(()=> {
+    setPost(db.find((p) => p.id === parseInt(id)))
+  },[])
 
   if (!post) return <div>Loading...</div>;
-
-  const dateStr = post.createdAt;
-  const myDate = new Date(dateStr);
-
-  // O'zgartirish
-  const options = { year: "numeric", month: "long", day: "numeric" };
-  const formattedDate = myDate.toLocaleDateString("en-GB", options);
 
   return (
     <div className="max-w-[680px] w-full sm:px-[20px] px-0 mx-auto mt-[40px]">
       <div className="mb-[60px]">
-        <h1 className="text-[2.5rem] font-semibold text-heading capitalize mb-[10px]">
+        <h1 className="text-[2.5rem] font-semibold text-heading capitalize mb-[5px]">
           {post.title}
         </h1>
-        <p className="timer text-gray-500 mb-[30px]">{formattedDate}</p>
-        <p className="leading-[1.5] tracking-wide whitespace-pre-line">{post.content}</p>
+        <div className="timer text-[14px] text-second-text mb-[30px]">{post.date}</div>
+        <p className="leading-[1.5] tracking-[0.08rem] whitespace-pre-line">{post.content}</p>
       </div>
       <div className="max-w-[400px] w-full mx-auto shadow-md rounded-[10px] p-[20px] mb-[40px]">
         <h3 className="font-bold">Agar!</h3>
