@@ -18,14 +18,14 @@ const AboutPage = () => {
         mening ham o'zimga yarasha qiziqishlarim bor, bularning eng ko'zga
         ko'rinarlisi bu rasm chizish.Chizgan rasmlarimni Instagram sahifamga
         qo'yib boraman, ularni <Link className="text-blue-500" to={'https://www.instagram.com/fay_zek_art/'} target="_blank">shu yerda</Link> ko'rishingiz mumkin. Bu o'zim haqimda
-        qisqacha malumotlar edi.<br/><br/> Blogimga xush kelibsiz va vaqt ajratib
+        qisqacha ma'lumotlar edi.<br/><br/> Blogimga xush kelibsiz va vaqt ajratib
         o‘qiyotganingiz uchun tashakkur!
       </p>
       </div>
 
       <div className="max-w-[400px] w-full mx-auto shadow-md rounded-[10px] p-[20px] mb-[40px]">
         <h3 className="font-bold">Agar!</h3>
-        Izohlaring bo'lsa <Link className="text-blue-500" to={'https://t.me/wzworld'} target="_blank">yozishingiz</Link> mumkin
+        Izohlaringiz bo'lsa <Link className="text-blue-500" to={'https://t.me/wzworld'} target="_blank">yozishingiz</Link> mumkin
       </div>
     </div>
   );

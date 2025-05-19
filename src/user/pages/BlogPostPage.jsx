@@ -24,7 +24,7 @@ const BlogPostPage = () => {
       </div>
       <div className="max-w-[400px] w-full mx-auto shadow-md rounded-[10px] p-[20px] mb-[40px]">
         <h3 className="font-bold">Agar!</h3>
-        Izohlaring bo'lsa <Link className="text-blue-500" to={'https://t.me/wzworld'} target="_blank">yozishingiz</Link> mumkin
+        Izohlaringiz bo'lsa <Link className="text-blue-500" to={'https://t.me/wzworld'} target="_blank">yozishingiz</Link> mumkin
       </div>
       <Link className="text-blue-500 underline" to={"/blog"}>
         Orqaga
