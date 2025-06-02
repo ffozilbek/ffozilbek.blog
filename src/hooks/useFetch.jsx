@@ -11,7 +11,7 @@ export const useFetch = (url) => {
       setLoading(true);
       try {
         const response = await axios.get(url);
-        setData(response.data);
+        setData(response.data.reverse());
         setError(null);
       } catch (err) {
         setError(err.message || "Something went wrong");
