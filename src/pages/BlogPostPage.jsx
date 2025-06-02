@@ -6,21 +6,24 @@ import { useEffect } from "react";
 
 const BlogPostPage = () => {
   const { id } = useParams();
-  const {data:post,loading,error} = useFetch(`https://683d8dd8199a0039e9e5f0ae.mockapi.io/posts/${id}`)
+  console.log(id);
+
+  const {data,loading,error} = useFetch(`https://683d8dd8199a0039e9e5f0ae.mockapi.io/posts/${id}`)
+
+  console.log(data);
+
 
   return (
     <div className="max-w-[680px] w-full sm:px-[20px] px-0 mx-auto mt-[40px]">
-      {loading ? (
-        "Loading..."
-      ) : (
-        <div className="mb-[60px]">
-          <h1 className="text-[2.5rem] font-semibold text-heading capitalize mb-[5px]">
-            {post.title}
-          </h1>
-          <div className="timer text-[14px] text-second-text mb-[30px]">{<GetDate isoDate={post.createdAt}/>}</div>
-          <p className="leading-[1.5] tracking-[0.08rem] whitespace-pre-line">{post.content}</p>
-        </div>
-      )}
+      {loading && "Loading..."}
+      {data && <div className="mb-[60px]">
+        <h1 className="text-[2.5rem] font-semibold text-heading capitalize mb-[5px]">
+          {data.title}
+        </h1>
+        <div className="timer text-[14px] text-second-text mb-[30px]">{<GetDate isoDate={data.createdAt}/>}</div>
+        <p className="leading-[1.5] tracking-[0.08rem] whitespace-pre-line">{data.content}</p>
+      </div>}
+
 
       <div className="max-w-[400px] w-full mx-auto shadow-md rounded-[10px] p-[20px] mb-[40px]">
         <h3 className="font-bold">Agar!</h3>
