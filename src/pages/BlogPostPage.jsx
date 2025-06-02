@@ -8,17 +8,6 @@ const BlogPostPage = () => {
   const { id } = useParams();
   const {data:post,loading,error} = useFetch(`https://683d8dd8199a0039e9e5f0ae.mockapi.io/posts/${id}`)
 
-  useEffect(() => {
-  if (loading) {
-    document.title = 'Loading...';
-  } else if (post?.title) {
-    document.title = post.title;
-  } else {
-    document.title = 'Blog Post';
-  }
-}, [loading, post]);
-
-
   return (
     <div className="max-w-[680px] w-full sm:px-[20px] px-0 mx-auto mt-[40px]">
       {loading ? (
