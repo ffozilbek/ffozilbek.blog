@@ -8,12 +8,12 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      Component: RootLayout,
+      element: <RootLayout />,
       children: [
-        { index: true, Component: HomePage },
-        { path: "blog", Component: BlogPage },
-        { path: "about", Component: AboutPage },
-        { path: "posts/:id", Component: BlogPostPage },
+        { index: true, element: <HomePage /> },
+        { path: "blog", element: <BlogPage/> },
+        { path: "about", element: <AboutPage /> },
+        { path: "blog/:id", element: <BlogPostPage /> },
       ],
     },
   ]);

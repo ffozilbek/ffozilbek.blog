@@ -11,7 +11,6 @@ export default function RootLayout() {
     if (path === "/") document.title = "ffozilbek.blog || bosh sahifa";
     else if (path === "/blog") document.title = "ffozilbek.blog || blog sahifa";
     else if (path === "/about") document.title = "ffozilbek.blog || men haqimda";
-    else document.title = "ffozilbek.blog || bloglar";
   }, [location]);
 
 
