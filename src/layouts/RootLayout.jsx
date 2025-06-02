@@ -8,9 +8,8 @@ export default function RootLayout() {
 
   useEffect(() => {
     const path = location.pathname;
-    if (path === "/") document.title = "ffozilbek.blog || bosh sahifa";
-    else if (path === "/blog") document.title = "ffozilbek.blog || blog sahifa";
-    else if (path === "/about") document.title = "ffozilbek.blog || men haqimda";
+    if (path === "/") document.title = "Fozilbek's Blog";
+    else if (path === "/about") document.title = "About Me";
   }, [location]);
 
 

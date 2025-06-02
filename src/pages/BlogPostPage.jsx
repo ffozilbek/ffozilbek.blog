@@ -1,12 +1,22 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router";
 import { useFetch } from "../hooks/useFetch";
-import {GetDate} from "../components";
+import { GetDate } from "../components";
+import { useEffect } from "react";
 
 const BlogPostPage = () => {
   const { id } = useParams();
   const {data:post,loading,error} = useFetch(`https://683d8dd8199a0039e9e5f0ae.mockapi.io/posts/${id}`)
-  console.log(post);
+
+  useEffect(() => {
+  if (loading) {
+    document.title = 'Loading...';
+  } else if (post?.title) {
+    document.title = post.title;
+  } else {
+    document.title = 'Blog Post';
+  }
+}, [loading, post]);
 
 
   return (
