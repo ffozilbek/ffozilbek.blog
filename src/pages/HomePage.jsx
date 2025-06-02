@@ -1,7 +1,7 @@
-import fozilbek from '../../assets/img/fozilbek.jpeg'
-import instagram from '../../assets/img/instagram-icon.svg'
-import telegram from '../../assets/img/telegram-icon.svg'
-import github from '../../assets/img/github-icon.svg'
+import fozilbek from '../assets/img/fozilbek.jpeg'
+import instagram from '../assets/img/instagram-icon.svg'
+import telegram from '../assets/img/telegram-icon.svg'
+import github from '../assets/img/github-icon.svg'
 import { Link } from 'react-router'
 
 const HomePage = () => {

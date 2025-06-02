@@ -1,4 +1,4 @@
-import db from "../../db/database.json";
+import db from "../db/database.json";
 import {BlogsCard} from "../components"
 
 const BlogPage = () => {

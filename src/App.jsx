@@ -1,5 +1,5 @@
 import { createBrowserRouter, useLocation } from "react-router";
-import { HomePage, AboutPage, BlogPage, BlogPostPage } from "./user/pages";
+import { HomePage, AboutPage, BlogPage, BlogPostPage } from "./pages";
 import { RouterProvider } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import { useEffect } from "react";

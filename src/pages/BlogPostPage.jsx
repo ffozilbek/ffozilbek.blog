@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import db from "../../db/database.json";
+import db from "../db/database.json";
 import { Link } from "react-router";
 
 const BlogPostPage = () => {

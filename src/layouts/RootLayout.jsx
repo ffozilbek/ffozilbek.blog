@@ -1,5 +1,5 @@
 import { Outlet, useLocation } from "react-router-dom";
-import { Navbar } from "../user/components";
+import { Navbar } from "../components";
 import { useEffect, useState } from "react";
 
 export default function RootLayout() {
